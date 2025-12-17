@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sound360 - Professional Audio, Lighting & Visual Solutions",
     description:
-      "Expert sound, lighting, and visual solutions for events in South Africa. Professional audio equipment, stage lighting, rigging, livestreaming, and complete event production services.",
+      "Expert sound, lighting, and visual solutions for events in South Africa.",
     url: "https://sound360.co.za",
     siteName: "Sound360",
     images: [
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -69,6 +70,21 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9SZZGEC3SL"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9SZZGEC3SL');
+          `}
+        </Script>
+
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
