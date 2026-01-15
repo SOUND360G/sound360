@@ -20,7 +20,7 @@ export function WhatsAppWidget() {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      "Hi Sound360! I'm interested in your event production services. Could you please provide more information?",
+      "Hi Sound360!",
     )
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
     window.open(whatsappUrl, "_blank")
