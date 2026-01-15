@@ -74,7 +74,7 @@ export function WhatsAppWidget() {
                       "🎵 Audio services",
                       "💡 Lighting design",
                       "📺 Visual solutions",
-                      "🎪 Event production",
+                
                     ].map((option, index) => (
                       <button
                         key={index}
