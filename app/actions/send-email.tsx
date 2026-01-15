@@ -21,7 +21,7 @@ export async function sendContactEmail(formData: FormData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "Sound360 Website <onboarding@resend.dev>", // You can update this once you verify your domain
+      from: "Sound360 Website <info@sound360.co.za>", // You can update this once you verify your domain
       to: ["info@sound360.co.za"],
       replyTo: email,
       subject: `New Contact Form Submission - ${firstName} ${lastName}`,
