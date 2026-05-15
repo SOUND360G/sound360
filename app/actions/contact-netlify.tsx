@@ -21,7 +21,7 @@ New Contact Form Submission - Sound360
 Contact Information:
 - Name: ${firstName} ${lastName}
 - Email: ${email}
-- Phone: ${phone || "Not provided"}
+- Phone: ${phone}
 
 Event Details:
 - Event Type: ${eventType || "Not specified"}

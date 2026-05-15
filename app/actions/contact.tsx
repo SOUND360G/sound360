@@ -31,7 +31,7 @@ export async function submitContactForm(formData: FormData) {
           first_name: firstName,
           last_name: lastName,
           from_email: email,
-          phone: phone || "Not provided",
+          phone: phone,
           event_type: eventType || "Not specified",
           services: services.length > 0 ? services.join(", ") : "Not specified",
           message: message,

@@ -11,8 +11,7 @@ export function AboutSection() {
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">About SOUND360</h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Cape Town's trusted experts in audio, lighting, and visual solutions - powering unforgettable events with
-              advanced technology and proven skill.
+              Cape Town’s trusted experts in audio, lighting and visual solutions, delivering seamless experiences across corporate events, weddings, anniversaries, school productions, brand activations and high-end private celebrations.
             </p>
           </div>
 

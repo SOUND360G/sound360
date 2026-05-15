@@ -25,7 +25,7 @@ export async function submitContactFormFormspree(formData: FormData) {
       body: JSON.stringify({
         name: `${firstName} ${lastName}`,
         email: email,
-        phone: phone || "Not provided",
+        phone: phone,
         eventType: eventType || "Not specified",
         services: services.length > 0 ? services.join(", ") : "Not specified",
         message: message,

@@ -29,7 +29,7 @@ export async function submitContactFormEmailJS(formData: FormData) {
         template_params: {
           from_name: `${firstName} ${lastName}`,
           from_email: email,
-          phone: phone || "Not provided",
+          phone: phone,
           event_type: eventType || "Not specified",
           services: services.length > 0 ? services.join(", ") : "Not specified",
           message: message,

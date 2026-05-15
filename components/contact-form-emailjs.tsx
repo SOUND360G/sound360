@@ -51,7 +51,7 @@ export function ContactFormEmailJS() {
         {
           from_name: `${firstName} ${lastName}`,
           from_email: email,
-          phone: phone || "Not provided",
+          phone: phone,
           event_type: eventType || "Not specified",
           services: services.length > 0 ? services.join(", ") : "Not specified",
           message: message,
@@ -146,12 +146,13 @@ export function ContactFormEmailJS() {
 
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-            Phone Number
+            Phone Number *
           </label>
           <Input
             id="phone"
             name="phone"
             type="tel"
+            required
             className="w-full rounded-xl border-gray-300 focus:border-black focus:ring-black bg-white"
           />
         </div>

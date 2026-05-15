@@ -51,7 +51,7 @@ export async function sendContactEmail(formData: FormData) {
                 </tr>
                 <tr>
                   <td style="padding: 10px 0; border-bottom: 1px solid #ddd;"><strong>Phone:</strong></td>
-                  <td style="padding: 10px 0; border-bottom: 1px solid #ddd;">${phone || "Not provided"}</td>
+                  <td style="padding: 10px 0; border-bottom: 1px solid #ddd;">${phone }</td>
                 </tr>
               </table>
 
