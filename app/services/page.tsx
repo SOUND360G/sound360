@@ -122,8 +122,7 @@ export default function ServicesPage() {
                 Our <span className="text-sound360">Services</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
-                Comprehensive event production services designed to bring your vision to life with professional-grade
-                equipment and expert execution.
+                Comprehensive event production services across corporate events, weddings, anniversaries, school productions, brand activations and high-end private celebrations, brought to life with professional-grade equipment and experienced execution.
               </p>
             </div>
           </div>
