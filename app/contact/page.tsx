@@ -203,12 +203,13 @@ export default function ContactPage() {
 
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone Number
+                        Phone Number *
                       </label>
                       <Input
                         id="phone"
                         name="phone"
                         type="tel"
+                        required
                         className="w-full rounded-xl border-gray-300 focus:border-black focus:ring-black bg-white"
                       />
                     </div>
