@@ -35,7 +35,7 @@ export async function submitContactForm(formData: FormData) {
           event_type: eventType || "Not specified",
           services: services.length > 0 ? services.join(", ") : "Not specified",
           message: message,
-          to_email: "info@sound360.co.za",
+          to_email: "websiteforms@sound360.co.za",
           reply_to: email,
           // Additional template variables you can use
           full_message: `
